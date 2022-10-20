@@ -19,6 +19,11 @@ export class ApiService {
     deleteflight=(data:any)=>{
 return this.http.post("http://localhost:8080/deleteflight",data)
     }
+
+    searchflight=(data:any)=>{
+      return this.http.post("http://localhost:8080/searchflight",data)
+          }
+
   }
 
 
